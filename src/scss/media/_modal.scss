@@ -1,0 +1,102 @@
+@media (min-width: 576px) {
+  .overlay {
+    .modal {
+      width: 360px;
+      height: 500px;
+      .picture {
+        width: 300px;
+        height: 260px;
+        .status {
+          bottom: 30px;
+          left: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    .modal {
+      width: 522px;
+      height: 689px;
+      &_result {
+        width: 522px;
+        height: 608px;
+        padding: 40px;
+      }
+      &_answer {
+        width: 522px;
+        height: 689px;
+      }
+      .message {
+        padding: 70px 70px 0 70px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: -0.5px;
+        color: var(--main-color);
+      }
+      .picture {
+        width: 462px;
+        height: 416px;
+        margin: 0 auto;
+        padding: 30px;
+        .status {
+          bottom: 50px;
+          left: 50px;
+        }
+      }
+      .title {
+        &_pass {
+          font-size: 42px;
+          line-height: 51px;
+        }
+        &_great {
+          font-size: 77px;
+          line-height: 78px;
+        }
+        &_fail {
+          font-size: 62px;
+          line-height: 90px;
+        }
+      }
+      .subtitle {
+        &_pass {
+          font-size: 82px;
+          line-height: 102px;
+          text-transform: uppercase;
+        }
+        &_great,
+        &_fail {
+          font-size: 42px;
+          line-height: 50px;
+        }
+      }
+      .result {
+        margin: 0 auto;
+        width: 169px;
+        height: 160px;
+        &_pass {
+          width: 189px;
+          height: 178px;
+        }
+        &_fail {
+          width: 189px;
+          height: 179px;
+        }
+        &_great {
+          width: 322px;
+          height: 125px;
+        }
+      }
+      .quit {
+        margin-top: 200px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 36px;
+      }
+    }
+  }
+}

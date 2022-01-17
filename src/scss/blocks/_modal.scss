@@ -1,0 +1,166 @@
+.overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
+  transition: 1.5s all;
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--font-color);
+    width: 343px;
+    height: 258px;
+    border-radius: 20px;
+    &_result {
+      width: 328px;
+      height: 436px;
+      padding: 25px 9px;
+    }
+    &_answer {
+      width: 343px;
+      height: 430px;
+    }
+    &__btn-answer {
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .close {
+      outline: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      svg {
+        fill: rgba(1, 1, 1, 0.6);
+      }
+    }
+    .message {
+      padding: 70px 70px 0 70px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: -0.5px;
+      color: var(--main-color);
+    }
+    .btns {
+      margin-top: 55px;
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+    }
+    .picture {
+      width: 262px;
+      height: 216px;
+      margin: 0 auto;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      .status {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 60px;
+        height: 60px;
+        &_right {
+          background-image: url(../assets/svg/right-answer.svg);
+        }
+        &_wrong {
+          background-image: url(../assets/svg/wrong-answer.svg);
+        }
+      }
+    }
+    .name {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+      color: var(--main-color);
+    }
+    .author {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+      color: var(--main-color);
+    }
+    .title {
+      text-align: center;
+      color: var(--main-color);
+      &_pass {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 58px;
+      }
+      &_great {
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 102px;
+      }
+      &_fail {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 58px;
+      }
+    }
+    .subtitle {
+      text-align: center;
+      color: var(--main-color);
+      &_pass {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 28px;
+        text-transform: uppercase;
+      }
+      &_great,
+      &_fail {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+    .result {
+      margin: 0 auto;
+      width: 169px;
+      height: 160px;
+      background-size: cover;
+      &_pass {
+        background-image: url(../assets/svg/pass.svg);
+      }
+      &_fail {
+        background-image: url(../assets/svg/fail.svg);
+      }
+      &_great {
+        width: 276px;
+        height: 107px;
+        background-image: url(../assets/svg/great.svg);
+      }
+    }
+    .quit {
+      text-align: center;
+      color: var(--main-color);
+      margin-top: 150px;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}

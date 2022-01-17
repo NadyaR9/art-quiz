@@ -1,0 +1,72 @@
+.intro {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../assets/img/first-screen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__content {
+    position: absolute;
+    bottom: 81px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  &__btns {
+    margin-top: 32px;
+    height: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.logo {
+  position: relative;
+  width: 166px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -1px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: -10px;
+    top: 0;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: 25px;
+    top: 0;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+  }
+}
+#settings {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 34px;
+  height: 34px;
+  background-image: url('../../assets/svg/carbon_settings.svg');
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    background-image: url('../../assets/img/first-screen768.jpg');
+  }
+}
+@media (min-width: 1024px) {
+  .intro {
+    background-image: url('../../assets/img/first-screen1024.jpg');
+  }
+}

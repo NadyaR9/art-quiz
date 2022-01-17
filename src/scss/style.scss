@@ -1,0 +1,48 @@
+:root {
+  --main-color: #010101;
+  --font-color: #ffffff;
+  --second-color: #ffbca2;
+  --third-color: #a4a4a4;
+}
+#page_container,
+.container,
+footer {
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: 'Gilroy', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+button,
+button:active,
+button:focus,
+input,
+input:active,
+input:focus {
+  outline: none;
+}
+body {
+  background-color: var(--main-color);
+  color: var(--font-color);
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.screen {
+  width: 100%;
+  position: relative;
+}
+
+@import 'blocks/navigation';
+@import 'blocks/btn';
+@import 'blocks/switch-input';
+@import 'blocks/categories';
+@import 'blocks/modal';
+@import 'media/categories';
+@import 'media/btns';
+@import 'media/modal';

@@ -1,0 +1,6 @@
+{
+  "**/*.(js|(sa|sc)ss)": [
+    "yarn fix",
+    "git add"
+  ]
+}
